@@ -12,7 +12,7 @@ default_app_config = 'leonardo_module_vis_temporal.NavConfig'
 
 class Default(object):
 
-    optgroup = ('Navigation')
+    optgroup = ('Temporal vis')
 
     @property
     def apps(self):
