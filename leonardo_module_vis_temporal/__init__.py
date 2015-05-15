@@ -32,7 +32,7 @@ class Default(object):
 class NavConfig(AppConfig, Default):
 
     name = 'leonardo_module_vis_temporal'
-    verbose_name = "Temporal Visualizations Module"
+    verbose_name = "Temporal Visualization Module"
 
 
 default = Default()
