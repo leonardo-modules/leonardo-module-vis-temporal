@@ -1,18 +1,18 @@
 {% extends widget.get_base_template %}
 
 {% block content %}
-<div id="polar_clock_{{ widget.fe_identifier }}" class="polar-clock"></div>
+<div id="analog_clock_{{ widget.fe_identifier }}" class="analog-clock"></div>
 <script type="text/javascript">
 $(document).ready(function() {
-  var placeholder = '#polar_clock_{{ widget.fe_identifier }}'
-  var parent_box = $('#polar_clock_{{ widget.fe_identifier }}').parent();
+  var placeholder = '#analog_clock_{{ widget.fe_identifier }}'
+  var parent_box = $(placeholder).parent();
   width = parent_box.width();
   var config = {
     'width': width,
     'height': width,
     'placeholder': placeholder
   }
-  polar_clock(config);
+  analog_clock(config);
 });
 </script>
 {% endblock %}

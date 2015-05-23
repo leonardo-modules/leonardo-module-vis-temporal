@@ -1,0 +1,18 @@
+{% extends widget.get_base_template %}
+
+{% block content %}
+<div id="digital_clock_{{ widget.fe_identifier }}" class="digital-clock"></div>
+<script type="text/javascript">
+$(document).ready(function() {
+  var placeholder = '#digital_clock_{{ widget.fe_identifier }}'
+  var parent_box = $('#digital_clock_{{ widget.fe_identifier }}').parent();
+  width = parent_box.width();
+  var config = {
+    'width': width,
+    'height': width/3,
+    'placeholder': placeholder
+  }
+  digital_clock(config);
+});
+</script>
+{% endblock %}

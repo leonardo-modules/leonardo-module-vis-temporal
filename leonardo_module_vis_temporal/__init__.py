@@ -12,7 +12,13 @@ default_app_config = 'leonardo_module_vis_temporal.NavConfig'
 
 class Default(object):
 
-    optgroup = ('Temporal vis')
+    optgroup = ('Temporal visualizations')
+
+    js_files = [
+        'vis/js/analogclock.js'
+        'vis/js/digitalclock.js'
+        'vis/js/polarclock.js'
+    ]
 
     @property
     def apps(self):
@@ -26,6 +32,8 @@ class Default(object):
     @property
     def widgets(self):
         return [
+            AnalogClockWidget,
+            DigitalClockWidget,
             PolarClockWidget,
         ]
 
