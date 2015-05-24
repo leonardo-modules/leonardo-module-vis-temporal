@@ -1,9 +1,7 @@
 
-import logging
+from django.utils.translation import ugettext_lazy as _
 
 from django.apps import AppConfig
-
-LOG = logging.getLogger(__name__)
 
 from .widget import *
 
