@@ -7,40 +7,34 @@ LOG = logging.getLogger(__name__)
 
 from .widget import *
 
-default_app_config = 'leonardo_module_vis_temporal.NavConfig'
+default_app_config = 'leonardo_module_vis_temporal.Config'
 
 
 class Default(object):
 
-    optgroup = ('Temporal visualizations')
+    optgroup = 'Temporal visualizations'
 
     js_files = [
-        'vis/js/analogclock.js'
-        'vis/js/digitalclock.js'
-        'vis/js/polarclock.js'
+        'vis/js/analogclock.js',
+        'vis/js/digitalclock.js',
+        'vis/js/polarclock.js',
     ]
 
-    @property
-    def apps(self):
+    apps = [
+        'leonardo_module_vis_temporal',
+    ]
 
-        return [
+    widgets = [
+        AnalogClockWidget,
+        DigitalClockWidget,
+        PolarClockWidget,
+    ]
 
-            'leonardo_module_vis_temporal',
 
-        ]
-
-    @property
-    def widgets(self):
-        return [
-            AnalogClockWidget,
-            DigitalClockWidget,
-            PolarClockWidget,
-        ]
-
-class NavConfig(AppConfig, Default):
+class Config(AppConfig, Default):
 
     name = 'leonardo_module_vis_temporal'
-    verbose_name = "Temporal Visualization Module"
+    verbose_name = _("Temporal Visualization Module")
 
 
 default = Default()
