@@ -18,6 +18,11 @@ class Default(object):
         'vis/js/polarclock.js',
     ]
 
+    css_files = [
+        'vis/scss/analogclock.scss',
+        'vis/scss/polarclock.scss'
+    ]
+
     apps = [
         'leonardo_module_vis_temporal',
     ]
