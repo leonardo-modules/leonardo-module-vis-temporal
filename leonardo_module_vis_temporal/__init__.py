@@ -18,7 +18,7 @@ class Default(object):
         'vis/js/polarclock.js',
     ]
 
-    css_files = [
+    scss_files = [
         'vis/scss/analogclock.scss',
         'vis/scss/polarclock.scss'
     ]
