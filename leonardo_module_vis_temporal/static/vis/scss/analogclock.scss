@@ -2,12 +2,12 @@
 .analog-clock {
 
   fill: none;
-  stroke: #999;
+  stroke: $text-color;
   stroke-width: 3px;
 
   svg {
-    stroke: #000;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    stroke: $text-color;
+    font-family: $font-family-base;
   }
 
   .second-hand {
@@ -26,12 +26,12 @@
 
   .hands-cover {
     stroke-width: 3;
-    fill:#fff;
+    fill: $body-bg;
   }
 
   .second-tick {
     stroke-width: 3;
-    fill: #000;
+    fill: $text-color;
   }
 
   .hour-tick {
@@ -40,10 +40,12 @@
 
   .second-label {
     font-size: 12px;
+    stroke-width: 1px;
   }
 
   .hour-label {
     font-size: 24px;
+    stroke-width: 2px;
   }
 
 }
