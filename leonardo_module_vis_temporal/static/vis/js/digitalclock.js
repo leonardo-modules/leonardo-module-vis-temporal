@@ -7,7 +7,7 @@ function digital_clock(config) {
     width: config.width,
     height: config.height
   };
-  var w = size.width / 40;
+  var w = size.width / 28;
   var h = w * 2;
   var paths = [
     [

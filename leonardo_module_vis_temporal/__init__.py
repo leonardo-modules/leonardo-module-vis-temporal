@@ -20,6 +20,7 @@ class Default(object):
 
     scss_files = [
         'vis/scss/analogclock.scss',
+        'vis/scss/digitalclock.scss',
         'vis/scss/polarclock.scss'
     ]
 
@@ -32,7 +33,6 @@ class Default(object):
         DigitalClockWidget,
         PolarClockWidget,
     ]
-
 
 class Config(AppConfig, Default):
 

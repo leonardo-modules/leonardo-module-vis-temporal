@@ -2,8 +2,8 @@
 function analog_clock(config) {
 
   var radians = 0.0174532925, 
-    clockRadius = config.width/2-50,
-    margin = 50,
+    clockRadius = config.width/2-30,
+    margin = 30,
     width = (clockRadius+margin)*2,
     height = (clockRadius+margin)*2,
     hourHandLength = 2*clockRadius/3,

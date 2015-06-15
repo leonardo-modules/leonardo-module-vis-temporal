@@ -2,11 +2,11 @@
 .analog-clock {
 
   fill: none;
-  stroke: $text-color;
+  stroke: $headings-color;
   stroke-width: 3px;
 
   svg {
-    stroke: $text-color;
+    stroke: $headings-color;
     font-family: $font-family-base;
   }
 
@@ -32,20 +32,24 @@
   .second-tick {
     stroke-width: 3;
     fill: $text-color;
+    stroke: $text-color;
   }
 
   .hour-tick {
     stroke-width:8; /*same as the minute hand */
+    stroke: $text-color;
   }
 
   .second-label {
     font-size: 12px;
     stroke-width: 1px;
+    stroke: $text-color;
   }
 
   .hour-label {
     font-size: 24px;
     stroke-width: 2px;
+    stroke: $text-color;
   }
 
 }
