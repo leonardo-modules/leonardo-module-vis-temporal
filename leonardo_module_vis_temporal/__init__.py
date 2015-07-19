@@ -7,37 +7,33 @@ from .widget import *
 
 default_app_config = 'leonardo_module_vis_temporal.Config'
 
+LEONARDO_OPTGROUP = 'Temporal visualizations'
 
-class Default(object):
+LEONARDO_JS_FILES = [
+    'vis/js/analogclock.js',
+    'vis/js/digitalclock.js',
+    'vis/js/polarclock.js',
+]
 
-    optgroup = 'Temporal visualizations'
+LEONARDO_SCSS_FILES = [
+    'vis/scss/analogclock.scss',
+    'vis/scss/digitalclock.scss',
+    'vis/scss/polarclock.scss'
+]
 
-    js_files = [
-        'vis/js/analogclock.js',
-        'vis/js/digitalclock.js',
-        'vis/js/polarclock.js',
-    ]
+LEONARDO_APPS = [
+    'leonardo_module_vis_temporal',
+]
 
-    scss_files = [
-        'vis/scss/analogclock.scss',
-        'vis/scss/digitalclock.scss',
-        'vis/scss/polarclock.scss'
-    ]
-
-    apps = [
-        'leonardo_module_vis_temporal',
-    ]
-
-    widgets = [
-        AnalogClockWidget,
-        DigitalClockWidget,
-        PolarClockWidget,
-    ]
+LEONARDO_WIDGETS = [
+    AnalogClockWidget,
+    DigitalClockWidget,
+    PolarClockWidget
+]
 
 class Config(AppConfig, Default):
 
     name = 'leonardo_module_vis_temporal'
-    verbose_name = _("Temporal Visualization Module")
-
+    verbose_name = _(LEONARDO_OPTGROUP)
 
 default = Default()
