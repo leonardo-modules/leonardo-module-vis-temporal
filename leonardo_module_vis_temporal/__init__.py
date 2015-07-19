@@ -16,7 +16,7 @@ LEONARDO_JS_FILES = [
 ]
 
 LEONARDO_SCSS_FILES = [
-    'vis/scss/analogclock.scss',
+#    'vis/scss/analogclock.scss',
     'vis/scss/digitalclock.scss',
     'vis/scss/polarclock.scss'
 ]
