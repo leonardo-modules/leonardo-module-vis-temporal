@@ -31,9 +31,7 @@ LEONARDO_WIDGETS = [
     PolarClockWidget
 ]
 
-class Config(AppConfig, Default):
+class Config(AppConfig):
 
     name = 'leonardo_module_vis_temporal'
     verbose_name = _(LEONARDO_OPTGROUP)
-
-default = Default()
