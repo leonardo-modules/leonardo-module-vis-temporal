@@ -21,9 +21,9 @@ var d3clock = function(config) {
   formatMinute = d3.time.format("%M");
   formatHour = d3.time.format("%H");
   width = config.width ? config.width : 1000;
-  height = width/2;
+  height = width;
 
-  var outerRadius = 0.8 * height/2;
+  var outerRadius = 0.92 * height/2;
   var offSetX = height/2;
   var offSetY = height/2;
 
@@ -165,7 +165,7 @@ var d3clock = function(config) {
           easing:'linear'
       },
       'modern':{
-          outerRing: {r:outerRadius * 1, stroke: '#999', strokeWidth: 1},
+          outerRing: {r:outerRadius * 1, stroke: '#999', strokeWidth: 2},
           secondsRing: {r:outerRadius * 0.05, fill: 'black'},
           secondsInnermostRing: {r:outerRadius * 0.05/2, fill: 'black'},
           tickUnit: outerRadius * 0.0625/3,
@@ -231,7 +231,7 @@ var d3clock = function(config) {
 
       },
       'braun':{
-          outerRing: {r:outerRadius * 1.02, stroke: '#999', strokeWidth: 1},
+          outerRing: {r:outerRadius * 1.02, stroke: '#999', strokeWidth: 2},
           secondsRing: {r:outerRadius * 0.04, fill: '#F6C52E'},
           secondsInnermostRing: {r:outerRadius * 0.05/5, fill: 'black'},
           tickUnit: outerRadius * 0.0625/3,
@@ -242,7 +242,7 @@ var d3clock = function(config) {
             return (i%5) ? this.tickUnit*3*1.5  : this.tickUnit*3*1.5;
           },
           tickFill: function(i) {
-            return (i%5) ? '#999' : 'black';
+            return (i%5) ? '#fff' : 'black';
           },
           tickText: {
             fontSize: (width * 14 / 500),
@@ -306,7 +306,7 @@ var d3clock = function(config) {
 
       },
       'pf':{
-          outerRing: {r:outerRadius * 1.02, stroke: '#999', strokeWidth: 1},
+          outerRing: {r:outerRadius * 1.02, stroke: '#999', strokeWidth: 2},
           secondsRing: {r:outerRadius * 0.04, fill: '#F6C52E'},
           secondsInnermostRing: {r:outerRadius * 0.05/5, fill: 'black'},
           tickUnit: outerRadius * 0.0625/3,

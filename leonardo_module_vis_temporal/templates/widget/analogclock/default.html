@@ -1,21 +1,3 @@
-{% extends widget.get_base_template %}
+{% extends "widget/analogclock/_base.html" %}
 
-{% block content %}
-<div id="analog_clock_{{ widget.fe_identifier }}" class="analog-clock"></div>
-<script type="text/javascript">
-$(document).ready(function() {
-  var placeholder = '#analog_clock_{{ widget.fe_identifier }}'
-  var parent_box = $(placeholder).parent();
-  width = parent_box.width();
-  d3clock({
-    target: placeholder,
-    face: 'modern',
-    width: width*2,
-    // date:'Mon May 25 2015 10:09:37',
-    TZOffset: {
-      hours: 0
-    }
-  });
-});
-</script>
-{% endblock %}
+{% block face %}modern{% endblock %}
